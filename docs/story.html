@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>변준혁 이야기</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f3eee4;--cream2:#e8dfd1;--paper:#faf7f0;--charcoal:#20231f;--muted:#686961;--line:#cfc7b9;--brown:#8b4f2f;--brown2:#d29a77;--white:#fffaf2;--dline:#3a413b;--dmuted:#aeb4ad;--focus:#005fcc;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--charcoal);font-family:Inter,"Noto Sans KR",system-ui,sans-serif;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden}
+a{color:inherit}:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:3px}
+.eyebrow{font-size:.72rem;font-weight:900;letter-spacing:.15em;color:var(--brown);margin:0 0 18px}
+
+/* 상단 메뉴 */
+.top{position:fixed;z-index:50;top:0;left:0;right:0;height:72px;background:rgba(243,238,228,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{width:min(calc(100% - 48px),var(--max));height:100%;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.brand{text-decoration:none;font-weight:900;font-size:1.05rem;letter-spacing:-.06em}.brand span{color:var(--brown)}
+.menu{display:flex;gap:28px}
+.menu a{text-decoration:none;color:var(--muted);font-size:.72rem;font-weight:900;letter-spacing:.14em;transition:color .2s}
+.menu a:hover{color:var(--charcoal)}
+section{scroll-margin-top:72px}
+
+/* 첫 화면 */
+.hero{min-height:100svh;padding:110px 24px 48px;display:flex;align-items:center}
+.hero-inner{width:min(100%,var(--max));margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+h1{font-size:clamp(3rem,6.2vw,5rem);line-height:1;letter-spacing:-.06em;font-weight:900;margin:0 0 22px}
+h1 i{font-style:normal;color:var(--brown)}
+.tagline{font-size:clamp(1.08rem,1.75vw,1.35rem);line-height:1.55;font-weight:700;letter-spacing:-.03em;margin:0;max-width:19em}
+.tagline em{font-style:normal;color:var(--brown)}
+.gate{aspect-ratio:1;position:relative;display:grid;place-items:center}
+.gate-box{position:absolute;inset:11%;background:var(--cream2);border:1px solid var(--line);overflow:hidden}
+.gate-box::after{content:"";position:absolute;width:62%;aspect-ratio:1;border:1px solid var(--brown);border-radius:50%;right:-20%;top:-20%;opacity:.45}
+.core{z-index:2;width:38%;aspect-ratio:1;border-radius:50%;background:var(--charcoal);color:var(--white);display:grid;place-items:center;font-size:clamp(2.4rem,5vw,3.7rem);font-weight:900;letter-spacing:-.08em;box-shadow:0 22px 40px -14px rgba(32,35,31,.35)}
+.door{position:absolute;z-index:3;padding:12px 20px;background:var(--paper);border:1px solid var(--line);border-radius:3px;box-shadow:0 10px 22px -10px rgba(32,35,31,.25);text-decoration:none;font-weight:700;font-size:1rem;transition:background .15s,color .15s}
+.door:hover{background:var(--charcoal);color:var(--white)}
+.d1{top:7%;left:2%}.d2{top:29%;right:0}.d3{bottom:21%;left:0}.d4{bottom:6%;right:7%}
+
+/* 이야기 */
+.story{background:var(--charcoal);color:var(--white);padding:110px 24px 60px}
+.wrap{width:min(100%,var(--max));margin:auto}
+.story .eyebrow{color:var(--brown2)}
+.lead{font-size:clamp(1.9rem,4.4vw,3.5rem);line-height:1.25;letter-spacing:-.045em;font-weight:900;margin:0 0 76px;max-width:17em}
+.lead em{font-style:normal;color:var(--brown2)}
+.ch{display:grid;grid-template-columns:170px 1fr;gap:48px;padding:56px 0;border-top:1px solid var(--dline)}
+.when{font-size:1.05rem;font-weight:900;color:var(--brown2);line-height:1.35;letter-spacing:-.01em}
+.when small{display:block;margin-top:6px;font-size:.72rem;font-weight:700;letter-spacing:.13em;color:var(--dmuted)}
+.body{max-width:680px}
+.ch h3{font-size:clamp(1.55rem,2.8vw,2.25rem);line-height:1.25;letter-spacing:-.035em;margin:0 0 22px;font-weight:700}
+.ch h3 em{font-style:normal;color:var(--brown2)}
+.ch p{margin:0 0 16px;color:#e7e3da}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.chip{font-size:.74rem;font-weight:700;padding:2px 10px;border:1px solid #5a6158;border-radius:99px;color:var(--brown2)}
+.turn{margin:24px 0 16px;padding:4px 0 4px 18px;border-left:3px solid var(--brown2);font-weight:700;color:var(--white)}
+.steps{list-style:none;margin:6px 0 0;padding:0}
+.steps li{display:grid;grid-template-columns:82px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--dline)}
+.steps li:first-child{border-top:0;padding-top:0}
+.steps b{font-size:.95rem;color:var(--brown2);line-height:1.8}
+.steps span{color:#e7e3da}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 18px}
+.pair div{background:#2b2f2a;border:1px solid var(--dline);padding:18px 20px;border-radius:3px}
+.pair b{display:block;color:var(--brown2);font-size:.92rem;margin-bottom:6px}
+.pair p{margin:0;font-size:.97rem;line-height:1.7}
+.closing{padding:72px 0 60px;border-top:1px solid var(--dline)}
+.closing p{font-size:clamp(1.3rem,2.7vw,2rem);line-height:1.5;font-weight:700;letter-spacing:-.03em;margin:0 0 14px;max-width:26em}
+.closing p+p{color:var(--brown2)}
+
+/* 다음 단계 자리 */
+.todo{padding:70px 24px;border-top:1px solid var(--line)}
+.todo h2{font-size:clamp(1.8rem,3.4vw,2.6rem);letter-spacing:-.04em;margin:0 0 8px}
+.todo p{margin:0;color:var(--muted)}
+
+@media (max-width:760px){
+ .top-in{width:calc(100% - 40px)}.menu{gap:14px}.menu a{font-size:.64rem;letter-spacing:.08em}.hero{padding:96px 20px 36px}.hero-inner{grid-template-columns:1fr;gap:26px}
+ .gate{max-width:360px;width:100%;margin:auto}
+ .story{padding:72px 20px 40px}.ch{grid-template-columns:1fr;gap:14px;padding:42px 0}
+ .pair{grid-template-columns:1fr}.steps li{grid-template-columns:66px 1fr;gap:12px}.door{padding:10px 15px;font-size:.92rem}.todo{padding:56px 20px}
+}
+
+.read{max-width:680px;margin:0 auto;padding:128px 24px 90px}
+.read h1{font-size:clamp(2rem,4vw,3rem);margin:0 0 10px}
+.read .sub{color:var(--muted);margin:0 0 46px;font-size:.95rem}
+.read p.b{margin:0}
+.read article p{font-size:1.06rem;line-height:1.95;margin:0 0 26px}
+.back{display:inline-block;margin-top:18px;font-weight:700;color:var(--brown)}
+
+.foot{background:var(--charcoal);color:var(--white);padding:30px 24px}
+.foot-in{width:min(100%,var(--max));margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.foot .brand{display:inline-block;color:var(--white);font-size:1.2rem}.foot .brand span{color:var(--brown2)}
+.foot p{margin:4px 0 0;font-size:.82rem;color:var(--dmuted)}
+.totop{flex:none;text-decoration:none;color:var(--brown2);font-size:.72rem;font-weight:900;letter-spacing:.14em}
+.totop:hover{color:var(--white)}
+.foot .mail{margin-top:10px;color:var(--brown2);font-weight:900;letter-spacing:.1em;font-size:.72rem}
+.foot .mail a{margin-left:6px;color:var(--white);font-weight:500;font-size:.9rem;letter-spacing:0;text-underline-offset:3px}
+@media (max-width:560px){.foot-in{flex-wrap:wrap}.foot{padding:26px 20px}.totop{font-size:.66rem;letter-spacing:.1em}.foot p{font-size:.76rem}}
+</style>
+</head>
+<body id="top">
+<header class="top"><div class="top-in">
+  <a class="brand" href="index.html">JH<span>.</span></a>
+  <nav class="menu" aria-label="메뉴"><a href="index.html#story">STORY</a><a href="index.html#record">RECORD</a><a href="index.html#project">PROJECT</a><a href="index.html#resume">RESUME</a></nav>
+</div></header>
+<main class="read">
+<h1>Full Story</h1>
+<p class="sub">변준혁 · 약 3분</p>
+<article>
+<p>계획했던 길이 막혔을 때, 저는 직접 부딪히며 저만의 답을 찾아가기로 했습니다. 2020년 봄, 준비하던 PEET를 포기했습니다. 독감으로 수업을 일주일 늦게 듣기 시작한 뒤로 제대로 준비하고 있다는 느낌을 받지 못했고, 코로나로 복학까지 미뤘습니다. 2021년 봄에 복학하면서는 할 거면 전공을 제대로 해 보자고 마음먹고 학부연구생으로 실험실에 들어갔습니다.</p>
+<p>궁금한 것은 직접 해 보는 편입니다. 실험실에서 샘플을 만들며 교수님의 질문에 제대로 답하고 싶어 원리를 따로 공부했습니다. 당시 상용 키트는 실패가 잦았고, 샘플이 나와도 수율이 너무 적었습니다. 이를 해결하려고 2021년 8월 동기와 책에서 인하우스 프로토콜을 찾아 시도했습니다. 4일 정도 걸려 수율과 순도가 모두 높은 샘플을 만들었지만, 다음 날 그 샘플이 사라졌습니다. 끝내 찾지 못해 기록을 보고 다시 만든 샘플은 처음만 못했습니다. 그 뒤로 실험 절차뿐 아니라 보관 위치까지 적게 되었습니다. 실험실은 그해 겨울, 떨어지는 성적과 지친 몸 때문에 나왔습니다.</p>
+<p>그 뒤로 전공을 살리지 않는 다른 길을 준비하다가 커피를 배우게 되었습니다. 쉬는 날마다 카페를 찾아 핸드드립을 비교해 마실 만큼 좋아하던 것이어서, 2026년에는 제대로 알고 싶어 학원에 들어갔습니다. SCA·IBS 과정 9개를 마치는 동안 함께 배우는 사람과 로스팅 기록을 서로 도와주었고, 퍼블릭 커핑과 세미나에도 같이 다녔습니다.</p>
+<p>2026년 8월에는 AI와 보안을 배우고 싶어 Aleph 과정에 들어왔습니다. 8월 21일 리눅스 수업에서 오류를 고치다 오타를 또 냈고, 그 뒤 커맨드를 적지 못해 수업을 따라가지 못했습니다. 멘탈이 무너진 그날, 같이 배우던 동료분들이 제 상태를 살피며 도와주셨습니다. 그 뒤로는 바로 고치기 어려운 오류가 나면 강사님 화면의 커맨드를 따로 입력해 두고 쉬는 시간에 수정했습니다. 9월 3일 시스템 오류로 파일을 다시 만들어야 했을 때는 정리해 둔 기록으로 혼자 복구한 뒤 동료에게 제대로 됐는지 물어보며 수업을 따라갔습니다. 9월 23일에는 GNS3 과제에서 방화벽의 Extended ACL을 어떻게 설정해야 할지 막혔습니다. 확실하게 짚고 넘어가고 싶어 정리해 둔 수업 노트를 바탕으로 토폴로지 구성부터 이해하려 했고, 그 뒤 AI에게 질문해 과제를 거의 완료했습니다.</p>
+<p>제가 받은 도움만큼 저도 주변 사람의 이야기를 듣습니다. 대학 밴드 동아리에서 후배들의 고민을 끝까지 듣던 때부터 그랬습니다. 8월에 한 친구가 고민을 털어놓았을 때는 해결보다 공감이 필요해 보여 2시간쯤 편하게 이야기를 나눴습니다. 9월에 그 친구가 다른 사람과의 관계로 고민할 때는 전체 이야기를 먼저 듣고 양쪽 의견을 정리해, 서로 이해하지 못한 점을 쉽게 풀어 설명했습니다. 같은 사람이어도 그때 필요한 것은 달랐습니다.</p>
+<p>일이 틀어지는 날도, 곁에 고민을 안은 사람이 있는 날도 올 것입니다. 직접 경험하며 길을 찾아왔듯, 틀어진 순간에는 기록을 바탕으로 다시 시도하고 타인의 고민은 깊이 듣고 명확히 이해하여 유연하게 행동하는 사람으로 함께하고 싶습니다.</p>
+</article>
+<a class="back" href="index.html#story">← STORY로 돌아가기</a>
+</main>
+<footer class="foot"><div class="foot-in">
+  <div><a class="brand" href="index.html">JH<span>.</span></a><p>A personal page about curiosity, experience and people.</p><p class="mail">CONTACT <a href="mailto:quswnsgur28@naver.com">quswnsgur28@naver.com</a></p></div>
+  <a class="totop" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+</div></footer>
+</body>
+</html>

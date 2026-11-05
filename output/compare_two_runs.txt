@@ -1,0 +1,23 @@
+# 두 번 실행한 결과 비교 (SHA-256)
+
+output/numbers.json
+  1회차 606ccb2cdd674b2e9b8542d2bea3915dc390bb7147f6730928f6e660480a0612
+  2회차 606ccb2cdd674b2e9b8542d2bea3915dc390bb7147f6730928f6e660480a0612
+  판정 같음
+
+output/candidates.md
+  1회차 9485d1138919a4f1f9ea42ee90ca152ec422aaa8f22cbf5134ab727ad9e3cff0
+  2회차 9485d1138919a4f1f9ea42ee90ca152ec422aaa8f22cbf5134ab727ad9e3cff0
+  판정 같음
+
+docs/index.html
+  1회차 547318f2725d84f0d855514d3c1dfce6b0cc4aa39f061f376b4ea22a3afcea22
+  2회차 547318f2725d84f0d855514d3c1dfce6b0cc4aa39f061f376b4ea22a3afcea22
+  판정 같음
+
+docs/story.html
+  1회차 acb80a39627cf319f43db0a6fdd61d099ff10f3e754585752a092d043a45f7df
+  2회차 acb80a39627cf319f43db0a6fdd61d099ff10f3e754585752a092d043a45f7df
+  판정 같음
+
+결과: 모두 같음

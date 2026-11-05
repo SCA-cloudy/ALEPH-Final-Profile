@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>변준혁 소개</title>
+<meta name="description" content="경험을 기록해 해법을 만들고, 타인의 고민에 유연하게 함께하는 사람">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#f3eee4;--cream2:#e8dfd1;--paper:#faf7f0;--charcoal:#20231f;--muted:#686961;--line:#cfc7b9;--brown:#8b4f2f;--brown2:#d29a77;--white:#fffaf2;--dline:#3a413b;--dmuted:#aeb4ad;--focus:#005fcc;--max:1120px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--charcoal);font-family:Inter,"Noto Sans KR",system-ui,sans-serif;line-height:1.75;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden}
+a{color:inherit}:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:3px}
+.eyebrow{font-size:.72rem;font-weight:900;letter-spacing:.15em;color:var(--brown);margin:0 0 18px}
+
+/* 상단 메뉴 */
+.top{position:fixed;z-index:50;top:0;left:0;right:0;height:72px;background:rgba(243,238,228,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top-in{width:min(calc(100% - 48px),var(--max));height:100%;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.brand{text-decoration:none;font-weight:900;font-size:1.05rem;letter-spacing:-.06em}.brand span{color:var(--brown)}
+.menu{display:flex;gap:28px}
+.menu a{text-decoration:none;color:var(--muted);font-size:.72rem;font-weight:900;letter-spacing:.14em;transition:color .2s}
+.menu a:hover{color:var(--charcoal)}
+section{scroll-margin-top:72px}
+
+/* 첫 화면 */
+.hero{min-height:100svh;padding:100px 24px 28px;display:flex;flex-direction:column;justify-content:center}
+.hero-inner{width:min(100%,var(--max));margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+h1{font-size:clamp(3rem,6.2vw,5rem);line-height:1;letter-spacing:-.06em;font-weight:900;margin:0 0 22px}
+h1 i{font-style:normal;color:var(--brown)}
+.tagline{font-size:clamp(1.08rem,1.75vw,1.35rem);line-height:1.55;font-weight:700;letter-spacing:-.03em;margin:0;max-width:19em}
+.tagline em{font-style:normal;color:var(--brown)}
+.keys{margin:0 0 20px;font-size:clamp(.8rem,1.15vw,.95rem);font-weight:900;letter-spacing:.1em;color:var(--charcoal)}
+.keys i{font-style:normal;color:var(--brown)}
+.doors{margin:32px 0 0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--charcoal)}
+.doors a{display:block;padding:16px 14px 6px;border-left:1px solid var(--line);text-decoration:none;transition:background .15s}
+.doors a:first-child{border-left:0;padding-left:0}
+.doors b{display:block;font-size:1.12rem;font-weight:700;letter-spacing:-.03em;line-height:1.4;transition:color .15s}
+.doors span{display:block;margin-top:4px;font-size:.76rem;color:var(--muted);line-height:1.5}
+.doors a:hover b{color:var(--brown)}
+.gate{aspect-ratio:1;position:relative;display:grid;place-items:center;width:100%;max-width:min(460px,62svh);margin-left:auto}
+.gate-box{position:absolute;inset:11%;background:var(--cream2);border:1px solid var(--line);overflow:hidden}
+.gate-box::after{content:"";position:absolute;width:62%;aspect-ratio:1;border:1px solid var(--brown);border-radius:50%;right:-20%;top:-20%;opacity:.45}
+.core{z-index:2;width:38%;aspect-ratio:1;border-radius:50%;background:var(--charcoal);color:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;font-size:clamp(2.4rem,5vw,3.7rem);font-weight:900;letter-spacing:-.08em;box-shadow:0 22px 40px -14px rgba(32,35,31,.35)}
+.core small{font-size:.55rem;font-weight:700;letter-spacing:.18em;color:#d9a98b;margin:5px 0}
+.door{position:absolute;z-index:3;white-space:nowrap;padding:8px 13px;background:var(--paper);border:1px solid var(--line);border-radius:3px;box-shadow:0 10px 22px -10px rgba(32,35,31,.25);font-weight:900;font-size:.68rem;letter-spacing:.07em}
+.d1{top:7%;left:2%}.d2{top:29%;right:0}.d3{bottom:21%;left:0}.d4{bottom:6%;right:7%}
+
+/* 이야기 */
+.story{background:var(--charcoal);color:var(--white);padding:110px 24px 60px}
+.wrap{width:min(100%,var(--max));margin:auto}
+.story .eyebrow{color:var(--brown2)}
+.story-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0 0 18px}
+.story-head .eyebrow{margin:0}
+.full{flex:none;padding:9px 16px;border:1px solid var(--brown2);border-radius:3px;text-decoration:none;color:var(--brown2);font-size:.72rem;font-weight:900;letter-spacing:.12em;transition:background .15s,color .15s}
+.full:hover{background:var(--brown2);color:var(--charcoal)}
+.lead{font-size:clamp(1.9rem,4.4vw,3.5rem);line-height:1.25;letter-spacing:-.045em;font-weight:900;margin:0 0 76px;max-width:17em}
+.lead em{font-style:normal;color:var(--brown2)}
+.ch{border-top:1px solid var(--dline)}
+.ch:last-of-type{border-bottom:1px solid var(--dline)}
+.ch summary{display:grid;grid-template-columns:130px 96px 1fr 24px;gap:16px;align-items:center;padding:28px 0;cursor:pointer;list-style:none}
+.ch summary::-webkit-details-marker{display:none}
+.ch summary:hover h3{color:var(--brown2)}
+.when{font-size:.95rem;font-weight:700;color:var(--dmuted);line-height:1.35}
+.lab{justify-self:start;font-size:.8rem;font-weight:700;padding:4px 10px;border:1px solid #5a6158;border-radius:3px;color:var(--white);white-space:nowrap}
+.ch:first-of-type .lab{background:var(--brown);border-color:var(--brown)}
+.ch h3{font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.35;letter-spacing:-.03em;margin:0;font-weight:700;transition:color .15s}
+.ch h3 em{font-style:normal;color:var(--brown2)}
+.plus{position:relative;width:18px;height:18px;justify-self:end}
+.plus::before,.plus::after{content:"";position:absolute;left:0;right:0;top:8px;height:2px;background:var(--brown2);transition:transform .2s}
+.plus::after{transform:rotate(90deg)}
+.ch[open] .plus::after{transform:rotate(0)}
+.body{max-width:680px;margin-left:258px;padding:0 0 36px}
+.ch .body p{margin:0 0 16px;color:#e7e3da}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.chip{font-size:.74rem;font-weight:700;padding:2px 10px;border:1px solid #5a6158;border-radius:99px;color:var(--brown2)}
+.turn{margin:24px 0 16px;padding:4px 0 4px 18px;border-left:3px solid var(--brown2);font-weight:700;color:var(--white)}
+.steps{list-style:none;margin:6px 0 0;padding:0}
+.steps li{display:grid;grid-template-columns:82px 1fr;gap:18px;padding:16px 0;border-top:1px solid var(--dline)}
+.steps li:first-child{border-top:0;padding-top:0}
+.steps b{font-size:.95rem;color:var(--brown2);line-height:1.8}
+.steps span{color:#e7e3da}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 18px}
+.pair div{background:#2b2f2a;border:1px solid var(--dline);padding:18px 20px;border-radius:3px}
+.pair b{display:block;color:var(--brown2);font-size:.92rem;margin-bottom:6px}
+.pair p{margin:0;font-size:.97rem;line-height:1.7}
+.closing{padding:64px 0 50px}
+.closing p{font-size:clamp(1.3rem,2.7vw,2rem);line-height:1.5;font-weight:700;letter-spacing:-.03em;margin:0 0 14px;max-width:26em}
+.closing p+p{color:var(--brown2)}
+
+/* 숫자 */
+.record{padding:90px 24px}
+.record h2{font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.25;letter-spacing:-.04em;margin:0 0 8px;font-weight:900}
+.rec-note{margin:0 0 32px;color:var(--muted);font-size:.95rem}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);background:var(--paper)}
+.stat{padding:24px 22px;border-left:1px solid var(--line);display:flex;flex-direction:column}
+.stat:first-child{border-left:0}
+.stat b{font-size:clamp(1.9rem,3vw,2.5rem);line-height:1.15;letter-spacing:-.04em;font-weight:900;color:var(--brown)}
+.stat strong{margin:8px 0 8px;font-size:.98rem}
+.stat p{margin:0 0 14px;font-size:.88rem;line-height:1.65;color:var(--muted)}
+.stat small,.rec-pair small{margin-top:auto;font-size:.76rem;font-weight:700;color:var(--charcoal)}
+.rec-pair{margin-top:16px;padding:24px 26px;background:var(--charcoal);color:var(--white)}
+.rec-pair>strong{display:block;margin-bottom:14px;color:var(--brown2);font-size:.9rem}
+.rec-flow{display:grid;grid-template-columns:1fr auto 1fr;gap:22px;align-items:start;margin-bottom:12px}
+.rec-flow span{display:block;font-size:.78rem;color:var(--dmuted);font-weight:700}
+.rec-flow b{display:block;font-size:1.35rem;letter-spacing:-.03em;margin:4px 0 6px}
+.rec-flow p{margin:0;font-size:.9rem;line-height:1.65;color:#e7e3da}
+.rec-flow i{font-style:normal;color:var(--brown2);font-size:1.5rem;align-self:center}
+.rec-pair small{color:var(--dmuted)}
+
+.act{margin-top:16px;padding:26px;display:grid;grid-template-columns:240px 1fr;gap:36px;align-items:center;background:var(--paper);border:1px solid var(--line)}
+.act-side strong{display:block;font-size:1.1rem}
+.act-side p{margin:6px 0 16px;font-size:.88rem;line-height:1.65;color:var(--muted)}
+.legend{list-style:none;margin:0 0 14px;padding:0}
+.legend li{display:flex;align-items:center;gap:10px;padding:7px 0;border-top:1px solid var(--line)}
+.legend span{font-size:.9rem;flex:1}.legend b{font-size:1.05rem;letter-spacing:-.02em}
+.act-side small{font-size:.76rem;font-weight:700}
+.c{display:block;width:18px;height:18px;border-radius:4px;border:1.5px solid var(--brown);flex:none;font-style:normal;position:relative}
+.c.on{background:var(--brown)}
+.c.part{background:linear-gradient(135deg,var(--brown) 50%,transparent 50%)}
+.c.none{background:transparent}
+.c.off{border-color:transparent;background:radial-gradient(circle,var(--line) 2px,transparent 2.5px)}
+.cal{display:grid;grid-template-columns:auto 1fr;gap:8px;min-width:0}
+.days{display:grid;grid-template-rows:repeat(5,1fr);padding-top:22px;gap:5px;font-size:.72rem;color:var(--muted)}
+.days span{display:flex;align-items:center}
+.heads,.cells{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:5px}
+.heads{height:22px;font-size:.72rem;color:var(--muted);overflow:visible}
+.heads span{white-space:nowrap}
+.cells{grid-template-rows:repeat(5,auto);grid-auto-flow:column}
+.cells .c{width:100%;height:auto;aspect-ratio:1;max-width:44px}
+.cells .c:hover::after{content:attr(data-tip);position:absolute;z-index:5;left:50%;bottom:calc(100% + 6px);transform:translateX(-50%);white-space:nowrap;padding:4px 8px;background:var(--charcoal);color:var(--white);font-size:.72rem;border-radius:3px}
+.cells .c.mark{outline:2px solid var(--charcoal);outline-offset:1px}
+
+.tasks{margin-top:16px;padding:24px 26px;background:var(--paper);border:1px solid var(--line)}
+.tasks-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:12px}
+.tasks-head strong{font-size:1.1rem}.tasks-head small{font-size:.76rem;font-weight:700}
+.tasks ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(6,auto);grid-auto-flow:column;column-gap:40px}
+.tasks li{display:grid;grid-template-columns:44px 24px 1fr;gap:6px;align-items:baseline;padding:9px 0;border-top:1px solid var(--line);font-size:.9rem;line-height:1.5}
+.tasks time{font-size:.78rem;color:var(--muted)}
+.tasks b{color:var(--brown);font-weight:900;font-size:.82rem}
+
+.att{margin-top:0;padding:24px 26px;background:var(--paper);border:1px solid var(--line)}
+.att ul{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.att li{padding:14px 16px;border:1px solid var(--line);border-radius:6px;background:var(--cream)}
+.att span{display:block;font-size:.8rem;color:var(--muted);margin-bottom:6px}
+.att b{font-size:1.5rem;font-weight:900;letter-spacing:-.03em}
+.att .rate b{color:var(--brown)}
+.att p{margin:0;font-size:.84rem;color:var(--muted)}
+
+/* 대표작 */
+.project{padding:90px 24px;border-top:1px solid var(--line)}
+.project h2{font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.25;letter-spacing:-.04em;margin:0 0 28px;font-weight:900}
+.works{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.work{padding:28px;background:var(--paper);border:1px solid var(--line)}
+.work.slot{background:transparent;border-style:dashed}
+.work-tag{margin:0 0 8px;font-size:.8rem;font-weight:700;color:var(--brown)}
+.work h3{margin:0 0 12px;font-size:clamp(1.25rem,2.1vw,1.6rem);line-height:1.4;letter-spacing:-.03em;font-weight:700}
+.work p{margin:0 0 16px;font-size:.95rem}
+.work.slot p:last-child{margin-bottom:0;color:var(--muted)}
+.work-facts{list-style:none;margin:0 0 20px;padding:14px 0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-block:1px solid var(--line)}
+.work-facts b{display:block;font-size:1.15rem;font-weight:900;letter-spacing:-.02em}
+.work-facts span{font-size:.8rem;color:var(--muted)}
+.work-links{display:flex;flex-wrap:wrap;gap:18px}
+.work-links a{font-weight:700;font-size:.92rem;color:var(--brown);text-underline-offset:3px}
+
+.res h3{margin:26px 0 8px;font-size:1.05rem;color:var(--brown)}
+.res h3:first-child{margin-top:0}
+.res table{width:100%;border-collapse:collapse}
+.res th,.res td{text-align:left;vertical-align:top;padding:11px 0;border-top:1px solid var(--line);font-size:.93rem;line-height:1.6}
+.res th{width:190px;padding-right:16px;font-weight:700;color:var(--muted)}
+.res-links{margin-top:24px}
+
+/* 다음 단계 자리 */
+.todo{padding:70px 24px;border-top:1px solid var(--line)}
+.todo h2{font-size:clamp(1.8rem,3.4vw,2.6rem);letter-spacing:-.04em;margin:0 0 8px}
+.todo p{margin:0;color:var(--muted)}
+
+@media (max-width:760px){
+ .res th{width:112px;font-size:.84rem}
+ .project{padding:64px 20px}.works{grid-template-columns:1fr}.work{padding:22px}.work-facts{gap:8px}.work-facts b{font-size:1rem}
+ .att{padding:20px}.att ul{grid-template-columns:repeat(2,1fr)}.att .rate{grid-column:1/-1}
+ .tasks{padding:20px}.tasks ol{grid-template-columns:1fr;grid-template-rows:none;grid-auto-flow:row}
+ .record{padding:64px 20px}.stats{grid-template-columns:1fr}.stat{padding:18px 16px;border-left:0;border-top:1px solid var(--line)}.stat:first-child{border-top:0}.act{grid-template-columns:1fr;gap:22px;padding:20px}.rec-pair{padding:20px}.rec-flow{grid-template-columns:1fr;gap:10px}.rec-flow i{transform:rotate(90deg);justify-self:start}
+ .top-in{width:calc(100% - 40px)}.menu{gap:14px}.menu a{font-size:.64rem;letter-spacing:.08em}.hero{padding:96px 20px 28px}.doors{grid-template-columns:1fr 1fr;margin-top:28px}.doors a,.doors a:first-child{padding:14px 12px 12px;border-left:0;border-top:1px solid var(--line)}.doors a:nth-child(-n+2){border-top:0}.doors a:nth-child(even){border-left:1px solid var(--line)}.doors a:nth-child(odd){padding-left:0}.doors b{font-size:1.1rem}.doors span{font-size:.74rem}.hero-inner{grid-template-columns:1fr;gap:26px}
+ .gate{max-width:320px;width:100%;margin:auto}
+ .story{padding:72px 20px 40px}.ch summary{grid-template-columns:1fr auto 18px;gap:8px 12px;padding:22px 0}.ch summary h3{grid-column:1/3;grid-row:2}.ch summary .plus{grid-column:3;grid-row:1/3;align-self:center}.lab{grid-column:2;grid-row:1}.when{grid-column:1;grid-row:1}.body{margin-left:0}
+ .pair{grid-template-columns:1fr}.steps li{grid-template-columns:66px 1fr;gap:12px}.door{padding:6px 10px;font-size:.6rem}.todo{padding:56px 20px}
+}
+
+.foot{background:var(--charcoal);color:var(--white);padding:30px 24px}
+.foot-in{width:min(100%,var(--max));margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.foot .brand{display:inline-block;color:var(--white);font-size:1.2rem}.foot .brand span{color:var(--brown2)}
+.foot p{margin:4px 0 0;font-size:.82rem;color:var(--dmuted)}
+.totop{flex:none;text-decoration:none;color:var(--brown2);font-size:.72rem;font-weight:900;letter-spacing:.14em}
+.totop:hover{color:var(--white)}
+.foot .mail{margin-top:10px;color:var(--brown2);font-weight:900;letter-spacing:.1em;font-size:.72rem}
+.foot .mail a{margin-left:6px;color:var(--white);font-weight:500;font-size:.9rem;letter-spacing:0;text-underline-offset:3px}
+@media (max-width:560px){.foot-in{flex-wrap:wrap}.foot{padding:26px 20px}.totop{font-size:.66rem;letter-spacing:.1em}.foot p{font-size:.76rem}}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <a class="brand" href="#top">JH<span>.</span></a>
+  <nav class="menu" aria-label="메뉴"><a href="#story">STORY</a><a href="#record">RECORD</a><a href="#project">PROJECT</a><a href="#resume">RESUME</a></nav>
+</div></header>
+<div class="hero" id="top"><div class="hero-inner">
+  <div>
+    <p class="keys">CURIOUS. HANDS-ON. <i>TOGETHER.</i></p>
+    <h1>변준혁<i>.</i></h1>
+    <p class="tagline">경험을 기록해 해법을 만들고, <em>타인의 고민에 유연하게 함께하는 사람</em></p>
+    <nav class="doors" aria-label="바로가기">
+  <a href="#story"><b>Story</b><span>PEET 포기에서 지금까지</span></a>
+  <a href="#record"><b>Record</b><span>13주 기록을 출처와 함께</span></a>
+  <a href="#project"><b>Project</b><span>10번 논문, 13번 앱 자리</span></a>
+  <a href="#resume"><b>Resume</b><span>이력서·자기소개서·경력기술서</span></a>
+</nav>
+  </div>
+  <div class="gate" aria-hidden="true">
+    <div class="gate-box"></div><div class="core"><small>WHO</small>JH<small>2026</small></div>
+    <span class="door d1">RESEARCH · 01</span><span class="door d2">BAND · 02</span><span class="door d3">COFFEE · 03</span><span class="door d4">NETWORK &amp; AI · NOW</span>
+  </div>
+</div>
+</div>
+
+<main>
+<section id="story" class="story"><div class="wrap">
+  <div class="story-head"><p class="eyebrow">MY STORY</p><a class="full" href="story.html">FULL STORY <span aria-hidden="true">→</span></a></div>
+  <p class="lead">계획했던 길이 막혔을 때, 저는 <em>직접 부딪히며 저만의 답을 찾아가기로</em> 했습니다.</p>
+
+  <details class="ch">
+    <summary>
+      <span class="when">2020년 봄</span>
+      <span class="lab">고난</span>
+      <h3>처음 세운 계획이 <em>멈췄습니다.</em></h3>
+      <span class="plus" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <p>2020년 봄, 준비하던 PEET를 포기했습니다. 독감으로 수업을 일주일 늦게 듣기 시작한 뒤로 제대로 준비하고 있다는 느낌을 받지 못했고, 코로나로 복학까지 미뤘습니다.</p>
+      <p>2021년 봄에 복학하면서는 할 거면 전공을 제대로 해 보자고 마음먹고 학부연구생으로 실험실에 들어갔습니다.</p>
+    </div>
+  </details>
+
+  <details class="ch">
+    <summary>
+      <span class="when">2021년</span>
+      <span class="lab">막힘</span>
+      <h3>궁금한 것은 <em>직접 해 보는 편입니다.</em></h3>
+      <span class="plus" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="chips"><span class="chip">자기동기력</span></div>
+      <p>실험실에서 샘플을 만들며 교수님의 질문에 제대로 답하고 싶어 원리를 따로 공부했습니다. 당시 상용 키트는 실패가 잦았고, 샘플이 나와도 수율이 너무 적었습니다. 이를 해결하려고 2021년 8월 동기와 책에서 인하우스 프로토콜을 찾아 시도했습니다.</p>
+      <p>4일 정도 걸려 수율과 순도가 모두 높은 샘플을 만들었지만, 다음 날 그 샘플이 사라졌습니다. 끝내 찾지 못해 기록을 보고 다시 만든 샘플은 처음만 못했습니다.</p>
+      <p class="turn">그 뒤로 실험 절차뿐 아니라 보관 위치까지 적게 되었습니다.</p>
+      <p>실험실은 그해 겨울, 떨어지는 성적과 지친 몸 때문에 나왔습니다.</p>
+    </div>
+  </details>
+
+  <details class="ch">
+    <summary>
+      <span class="when">2026년</span>
+      <span class="lab">새로운 길</span>
+      <h3>좋아하던 것을 <em>제대로 알고 싶었습니다.</em></h3>
+      <span class="plus" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="chips"><span class="chip">자기동기력</span></div>
+      <p>그 뒤로 전공을 살리지 않는 다른 길을 준비하다가 커피를 배우게 되었습니다. 쉬는 날마다 카페를 찾아 핸드드립을 비교해 마실 만큼 좋아하던 것이어서, 2026년에는 제대로 알고 싶어 학원에 들어갔습니다.</p>
+      <p>SCA·IBS 과정 9개를 마치는 동안 함께 배우는 사람과 로스팅 기록을 서로 도와주었고, 퍼블릭 커핑과 세미나에도 같이 다녔습니다.</p>
+    </div>
+  </details>
+
+  <details class="ch">
+    <summary>
+      <span class="when">2026년 8월~</span>
+      <span class="lab">다시 일어남</span>
+      <h3>무너진 날 뒤에 <em>방식을 바꿨습니다.</em></h3>
+      <span class="plus" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="chips"><span class="chip">자기조절력</span></div>
+      <p>2026년 8월에는 AI와 보안을 배우고 싶어 Aleph 과정에 들어왔습니다.</p>
+      <ol class="steps">
+        <li><b>8월 21일</b><span>8월 21일 리눅스 수업에서 오류를 고치다 오타를 또 냈고, 그 뒤 커맨드를 적지 못해 수업을 따라가지 못했습니다. 멘탈이 무너진 그날, 같이 배우던 동료분들이 제 상태를 살피며 도와주셨습니다.</span></li>
+        <li><b>그 뒤</b><span>그 뒤로는 바로 고치기 어려운 오류가 나면 강사님 화면의 커맨드를 따로 입력해 두고 쉬는 시간에 수정했습니다.</span></li>
+        <li><b>9월 3일</b><span>9월 3일 시스템 오류로 파일을 다시 만들어야 했을 때는 정리해 둔 기록으로 혼자 복구한 뒤 동료에게 제대로 됐는지 물어보며 수업을 따라갔습니다.</span></li>
+        <li><b>9월 23일</b><span>9월 23일에는 GNS3 과제에서 방화벽의 Extended ACL을 어떻게 설정해야 할지 막혔습니다. 확실하게 짚고 넘어가고 싶어 정리해 둔 수업 노트를 바탕으로 토폴로지 구성부터 이해하려 했고, 그 뒤 AI에게 질문해 과제를 거의 완료했습니다.</span></li>
+      </ol>
+    </div>
+  </details>
+
+  <details class="ch">
+    <summary>
+      <span class="when">2026년 11월</span>
+      <span class="lab">지금</span>
+      <h3>제가 받은 도움만큼 <em>저도 주변 사람의 이야기를 듣습니다.</em></h3>
+      <span class="plus" aria-hidden="true"></span>
+    </summary>
+    <div class="body">
+      <div class="chips"><span class="chip">대인관계력</span></div>
+      <p>대학 밴드 동아리에서 후배들의 고민을 끝까지 듣던 때부터 그랬습니다.</p>
+      <div class="pair">
+        <div><b>8월 · 공감</b><p>8월에 한 친구가 고민을 털어놓았을 때는 해결보다 공감이 필요해 보여 2시간쯤 편하게 이야기를 나눴습니다.</p></div>
+        <div><b>9월 · 조율</b><p>9월에 그 친구가 다른 사람과의 관계로 고민할 때는 전체 이야기를 먼저 듣고 양쪽 의견을 정리해, 서로 이해하지 못한 점을 쉽게 풀어 설명했습니다.</p></div>
+      </div>
+      <p class="turn">같은 사람이어도 그때 필요한 것은 달랐습니다.</p>
+    </div>
+  </details>
+
+  <div class="closing">
+    <p>일이 틀어지는 날도, 곁에 고민을 안은 사람이 있는 날도 올 것입니다.</p>
+    <p>직접 경험하며 길을 찾아왔듯, 틀어진 순간에는 기록을 바탕으로 다시 시도하고 타인의 고민은 깊이 듣고 명확히 이해하여 유연하게 행동하는 사람으로 함께하고 싶습니다.</p>
+  </div>
+</div></section>
+
+<section id="record" class="record"><div class="wrap">
+  <p class="eyebrow">RECORD</p>
+  <h2>13주 기록의 숫자</h2>
+  <p class="rec-note">Aleph 과정 기록을 그대로 옮겼습니다. 기준일 2026-11-04</p>
+  <div class="att">
+    <div class="tasks-head"><strong>출석</strong><small>출처: 내 출석 기록 · 2026-11-04 기준</small></div>
+    <ul>
+      <li><span>훈련일</span><b>57</b></li>
+      <li><span>재적일</span><b>57</b></li>
+      <li><span>출석</span><b>56</b></li>
+      <li><span>결석</span><b>0</b></li>
+      <li class="rate"><span>출석률</span><b>98.2%</b></li>
+    </ul>
+    <p>지각 2회가 있습니다. 확정 전 1일은 재적일에 들어갑니다.</p>
+  </div>
+  <div class="act">
+    <div class="act-side">
+      <strong>얼마나 실천했나</strong>
+      <p>2026-08-11부터 2026-11-04까지 57일, 아침 57회와 마무리 57회를 남겼고 실천 정도를 날짜별로 표시했습니다.</p>
+      <ul class="legend">
+        <li><i class="c on"></i><span>실천</span><b>27일</b></li>
+        <li><i class="c part"></i><span>일부 실천</span><b>30일</b></li>
+        <li><i class="c none"></i><span>못 함</span><b>0일</b></li>
+      </ul>
+      <small>출처: 리추얼 기록 (본인 기록)</small>
+    </div>
+    <div class="cal" role="img" aria-label="13주 달력. 57일 중 실천 27일, 일부 실천 30일, 못 함 0일">
+      <div class="days"><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span></div>
+      <div class="plot"><div class="heads"><span>8월</span><span></span><span></span><span></span><span>9월</span><span></span><span></span><span></span><span>10월</span><span></span><span></span><span></span><span>11월</span></div><div class="cells"><i class="c off" data-tip="2026-08-10 · 수업 없음"></i><i class="c on" data-tip="2026-08-11 · 실천"></i><i class="c on" data-tip="2026-08-12 · 실천"></i><i class="c part" data-tip="2026-08-13 · 일부 실천"></i><i class="c part" data-tip="2026-08-14 · 일부 실천"></i><i class="c off" data-tip="2026-08-17 · 수업 없음"></i><i class="c part" data-tip="2026-08-18 · 일부 실천"></i><i class="c on" data-tip="2026-08-19 · 실천"></i><i class="c part" data-tip="2026-08-20 · 일부 실천"></i><i class="c part mark" data-tip="2026-08-21 · 일부 실천"></i><i class="c on mark" data-tip="2026-08-24 · 실천"></i><i class="c part" data-tip="2026-08-25 · 일부 실천"></i><i class="c part" data-tip="2026-08-26 · 일부 실천"></i><i class="c on" data-tip="2026-08-27 · 실천"></i><i class="c part" data-tip="2026-08-28 · 일부 실천"></i><i class="c part" data-tip="2026-08-31 · 일부 실천"></i><i class="c on" data-tip="2026-09-01 · 실천"></i><i class="c part" data-tip="2026-09-02 · 일부 실천"></i><i class="c part" data-tip="2026-09-03 · 일부 실천"></i><i class="c on" data-tip="2026-09-04 · 실천"></i><i class="c on" data-tip="2026-09-07 · 실천"></i><i class="c part" data-tip="2026-09-08 · 일부 실천"></i><i class="c on" data-tip="2026-09-09 · 실천"></i><i class="c on" data-tip="2026-09-10 · 실천"></i><i class="c on" data-tip="2026-09-11 · 실천"></i><i class="c on" data-tip="2026-09-14 · 실천"></i><i class="c on" data-tip="2026-09-15 · 실천"></i><i class="c part" data-tip="2026-09-16 · 일부 실천"></i><i class="c part" data-tip="2026-09-17 · 일부 실천"></i><i class="c part" data-tip="2026-09-18 · 일부 실천"></i><i class="c on" data-tip="2026-09-21 · 실천"></i><i class="c part" data-tip="2026-09-22 · 일부 실천"></i><i class="c on" data-tip="2026-09-23 · 실천"></i><i class="c off" data-tip="2026-09-24 · 수업 없음"></i><i class="c off" data-tip="2026-09-25 · 수업 없음"></i><i class="c part" data-tip="2026-09-28 · 일부 실천"></i><i class="c on" data-tip="2026-09-29 · 실천"></i><i class="c part" data-tip="2026-09-30 · 일부 실천"></i><i class="c on" data-tip="2026-10-01 · 실천"></i><i class="c on" data-tip="2026-10-02 · 실천"></i><i class="c off" data-tip="2026-10-05 · 수업 없음"></i><i class="c part" data-tip="2026-10-06 · 일부 실천"></i><i class="c on" data-tip="2026-10-07 · 실천"></i><i class="c on" data-tip="2026-10-08 · 실천"></i><i class="c off" data-tip="2026-10-09 · 수업 없음"></i><i class="c on" data-tip="2026-10-12 · 실천"></i><i class="c part" data-tip="2026-10-13 · 일부 실천"></i><i class="c on" data-tip="2026-10-14 · 실천"></i><i class="c on" data-tip="2026-10-15 · 실천"></i><i class="c part" data-tip="2026-10-16 · 일부 실천"></i><i class="c on" data-tip="2026-10-19 · 실천"></i><i class="c on" data-tip="2026-10-20 · 실천"></i><i class="c part" data-tip="2026-10-21 · 일부 실천"></i><i class="c part" data-tip="2026-10-22 · 일부 실천"></i><i class="c part" data-tip="2026-10-23 · 일부 실천"></i><i class="c part" data-tip="2026-10-26 · 일부 실천"></i><i class="c on" data-tip="2026-10-27 · 실천"></i><i class="c on" data-tip="2026-10-28 · 실천"></i><i class="c part" data-tip="2026-10-29 · 일부 실천"></i><i class="c part" data-tip="2026-10-30 · 일부 실천"></i><i class="c part" data-tip="2026-11-02 · 일부 실천"></i><i class="c part" data-tip="2026-11-03 · 일부 실천"></i><i class="c part" data-tip="2026-11-04 · 일부 실천"></i><i class="c off" data-tip="2026-11-05 · 수업 없음"></i><i class="c off" data-tip="2026-11-06 · 수업 없음"></i></div></div>
+    </div>
+  </div>
+  <div class="tasks">
+    <div class="tasks-head"><strong>제출한 과제 12건 · 최종 확인 완료 12건</strong><small>출처: 내 제출 현황</small></div>
+    <ol><li><time>08.30</time><b>01</b><span>나를 소개하는 한 페이지</span></li><li><time>09.06</time><b>02</b><span>내가 설계한 미니게임</span></li><li><time>09.09</time><b>03</b><span>짤·카드 스튜디오</span></li><li><time>09.11</time><b>04</b><span>오늘의 진짜 정보판 — 데이터가 안 올 때</span></li><li><time>09.14</time><b>05</b><span>대화가 끊겨도 이어지는 프로젝트</span></li><li><time>10.12</time><b>06</b><span>플랜두씨 다이어리 1 — 내 계획과 실제를 담는 앱</span></li><li><time>10.18</time><b>07</b><span>플랜두씨 다이어리 2 — 인증을 붙이고, 어떻게 붙였는지 설명하기</span></li><li><time>10.20</time><b>08</b><span>내 소개 페이지에 패스키 달기 — 비밀번호 없이 나만 들어가기</span></li><li><time>10.28</time><b>09</b><span>나를 말하는 에이전트: 리추얼 기록에서 내 강점과 이야기를 찾습니다</span></li><li><time>11.01</time><b>10</b><span>AI와 함께 쓰는 첫 논문 — 가설에서 결론까지</span></li><li><time>11.03</time><b>+</b><span>반 추가 과제</span></li><li><time>11.03</time><b>11</b><span>나에 대한 3만 자 장편소설 — 내 삶을 소재로, 진한 감동의 서사</span></li></ol>
+  </div>
+  <aside class="rec-pair">
+    <strong>무너진 날과 그다음</strong>
+    <div class="rec-flow">
+      <div><span>2026-08-21</span><b>일부 실천했다</b><p>멘탈이 무너진 날에도 마무리 기록을 남겼습니다.</p></div>
+      <i aria-hidden="true">→</i>
+      <div><span>2026-08-24 · 다음 훈련일</span><b>실천했다</b><p>"당황치 않고 대처하며, 정확한 이유마저 알게 됐으니 다음엔 좀 더 조심할 수 있을 것이다."</p></div>
+    </div>
+    <small>출처: 리추얼 기록</small>
+  </aside>
+</div></section>
+<section id="project" class="project"><div class="wrap">
+  <p class="eyebrow">PROJECT</p>
+  <h2>대표작</h2>
+  <div class="works">
+    <article class="work">
+      <p class="work-tag">10번 과제 · 2026-11-01</p>
+      <h3>같은 커피 취향을 다르게 말하면 AI의 원두 추천도 달라질까?</h3>
+      <p>취향은 그대로 두고 문장만 세 가지로 바꿔 30번 요청한 뒤, 미리 정한 기준으로 판정한 첫 논문입니다. 세 쌍 모두 차이가 기준보다 작아, 이 실험에서 가설은 지지되었습니다.</p>
+      <ul class="work-facts"><li><b>30회</b><span>문장 3종 × 10회</span></li><li><b>0.04~0.14개</b><span>기준선과의 차이</span></li><li><b>0.5개</b><span>미리 정한 판정 기준</span></li></ul>
+      <div class="work-links"><a href="paper.pdf" target="_blank" rel="noopener">논문 PDF 열기 <span aria-hidden="true">→</span></a><a href="https://github.com/SCA-cloudy/ALEPH-Thesis-Coffee-AI">재현 패키지 보기 <span aria-hidden="true">→</span></a></div>
+    </article>
+    <article class="work slot">
+      <p class="work-tag">13번 과제 · 예정일 미정</p>
+      <h3>13번 앱이 들어올 자리</h3>
+      <p>13번 과제를 마치면 이곳에 앱과 주소를 넣습니다.</p>
+    </article>
+  </div>
+</div></section>
+<section id="resume" class="project"><div class="wrap">
+  <p class="eyebrow">RESUME</p>
+  <h2>이력서</h2>
+  <div class="res">
+    <h3>이력</h3>
+    <table><tr><th>2026.08 ~ 현재</th><td>코리아 IT 아카데미 Aleph 과정 수강 중</td></tr><tr><th>2021</th><td>대학 실험실 학부연구생: 샘플 제작, 프로토콜 수행과 기록</td></tr><tr><th>2018.03 ~ 2023.02</th><td>영남대학교 생명응용과학대학 의생명공학과 졸업 (이학사)</td></tr><tr><th>2018 ~ 2021</th><td>대학 밴드 동아리: 건반과 드럼, 신입 부원 연습과 합주 지원</td></tr></table>
+    <h3>자격</h3>
+    <table><tr><th>2026 · SCA</th><td>Barista Skills, Brewing, Green Coffee, Sensory Skills, Roasting (Intermediate) / Coffee Sustainability, Water &amp; Preventative Maintenance (Foundation)</td></tr><tr><th>2026 · IBS</th><td>Great Italian Espresso &amp; Cappuccino, Italian Coffee Art (Diploma)</td></tr><tr><th>대한상공회의소</th><td>컴퓨터활용능력 2급</td></tr></table>
+    <div class="work-links res-links"><a href="application.docx">이력서·자기소개서·경력기술서 받기 <span aria-hidden="true">↓</span></a><a href="mailto:quswnsgur28@naver.com">quswnsgur28@naver.com</a></div>
+  </div>
+</div></section>
+</main>
+<footer class="foot"><div class="foot-in">
+  <div><a class="brand" href="#top">JH<span>.</span></a><p>A personal page about curiosity, experience and people.</p><p class="mail">CONTACT <a href="mailto:quswnsgur28@naver.com">quswnsgur28@naver.com</a></p></div>
+  <a class="totop" href="#top">BACK TO TOP <span aria-hidden="true">↑</span></a>
+</div></footer>
+</body>
+</html>

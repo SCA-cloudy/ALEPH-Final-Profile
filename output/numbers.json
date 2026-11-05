@@ -1,0 +1,35 @@
+{
+  "as_of": "2026-11-04",
+  "assignments": {
+    "confirmed": 12,
+    "source": "내 제출 현황",
+    "total": 12
+  },
+  "attendance": {
+    "absent": 0,
+    "attended": 56,
+    "days": 57,
+    "late": 2,
+    "pending": 1,
+    "rate": 98.2,
+    "source": "내 출석 기록"
+  },
+  "hardship_pair": {
+    "action": "일부 실천했다",
+    "date": "2026-08-21",
+    "next_action": "실천했다",
+    "next_date": "2026-08-24"
+  },
+  "ritual": {
+    "closing": 57,
+    "days": 57,
+    "first": "2026-08-11",
+    "full": 27,
+    "last": "2026-11-04",
+    "morning": 57,
+    "none": 0,
+    "partial": 30,
+    "source": "리추얼 기록"
+  },
+  "weeks": 13
+}
